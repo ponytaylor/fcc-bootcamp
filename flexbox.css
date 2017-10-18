@@ -1,0 +1,37 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+ 
+h1 {
+    text-align: center;
+}
+ 
+.flexContainer {
+    border: 1px solid firebrick;
+    height: 300px;
+    display: flex; /* divs will stack by default, this makes them in a row */
+    flex-direction: row; /* or column, row-reverse, column-reverse*/
+    flex-wrap: wrap; /* nowrap, wrap-reverse - default is nowrap */
+    flex-flow: row wrap; /* set both direction and wrap in one line */
+    justify-content: space-around; /* flex-end, flex-center, space-around, space-between */
+    align-items: flex-start; /*vertical alignments not the space ones but baseline*/
+    /* align-content: flex-start;  for multiline content */
+}
+ 
+.flexItem {
+    border: 1px solid teal;
+    background-color: lawngreen;
+    height: 50px;
+    width: 50px;
+    order: 0; /* can be negative*/
+    flex-grow: 1;
+    flex-shrink: 1; /* controls how items shrink when window gets smaller */
+    flex-basis: 100px; /* overwrites width */
+    flex: 1 0 100px; /* grow, shrink, basis */
+}
+.bigFont {
+    font-size: 2em;
+    order: 1;
+    flex-grow: 3;
+}
