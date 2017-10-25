@@ -1,4 +1,7 @@
 
+body {
+    margin:0;
+}
 .main-header{
     color: chocolate;
 
@@ -12,4 +15,33 @@ p {
 
 .red-text {
     color: red;
+}
+nav {
+    display: flex;
+    background-color: indigo;
+    color: whitesmoke;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+#nav-menu {
+    display: flex;
+    list-style: none;
+    
+    justify-content: space-around;
+
+}
+li.menu-item{
+    margin: 0 10px;
+}
+
+.menu-item a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
