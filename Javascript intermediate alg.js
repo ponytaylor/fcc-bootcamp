@@ -270,6 +270,7 @@ function telephoneCheck(str) {
 
 telephoneCheck("555-555-5555");
 
+
 function addTogether() {
   //console.log(typeof arguments[0]);
   //console.log(typeof arguments[1]);
